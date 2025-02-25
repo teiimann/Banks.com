@@ -1,0 +1,589 @@
+    [
+        {
+            "Bank": {
+                "Name": "AO Altyn Bank",
+                "CEO": "NAN",
+                "Board of Directors": [
+                    "Lu Wei",
+                    "Arman Galiaskarovich Dunaev (Independent Director)",
+                    "Umut Bolatkhanovna Shayahmetova",
+                    "Zhai Xu",
+                    "Ngai Ka Ching (Independent Director)",
+                    "Wang Goshen (Independent Director)",
+                    "Marat Berkutbaevich Almenov",
+                    "Liu Tianhui",
+                    "Wang Junwei",
+                    "Pu Gang"
+                ],
+                "Chairman of the Board": "Marat Berkutbaevich Almenov",
+                "Management Board Members": [
+                    "Murat Baisynovich Baysynov",
+                    "Zhanara Tuligenovna Aykimbayeva",
+                    "Hu Cefeng",
+                    "Jia Fei"
+                ],
+                "Other Executives": "NAN",
+                "Director": "NAN",
+                "Chief Accountant": "Amangeldy Zhumabekovich Karzhaubekov",
+                "BIN": "980740000057",
+                "Address": "050008, Almaty, Abay Ave, 109 \"B\"",
+                "Phone": "+7 (727) 259 69 00",
+                "Email": "info@altynbank.kz",
+                "Website": "www.altynbank.kz",
+                "License": "",
+                "Branches": ""
+            }
+        },
+        
+        {
+            "Bank": {
+                "Name": "AO Bereke Bank",
+                "CEO": "NAN",
+                "Board of Directors": [
+                    "Nasser Abdullah S M Al-Sharif (Independent Director)",
+                    "Andrey Igorevich Timchenko",
+                    "David Mark Brown (Independent Director)",
+                    "Petr Yanush Kachmarek (Independent Director)"
+                ],
+                "Chairman of the Board": "Andrey Igorevich Timchenko",
+                "Management Board Members": [
+                    "Serke Muratbekovich Kasenov",
+                    "Alina Vladimirovna Anikina"
+                ],
+                "Other Executives": "NAN",
+                "Director": "NAN",
+                "Chief Accountant": "Aigerim Beksultanovna Safina",
+                "BIN": "930740000137",
+                "Address": "050059, Almaty, Al-Farabi Ave, 13/1",
+                "Phone": "+7 (727) 250 00 60, +7 (727) 250 00 63",
+                "Email": "post@berekebank.kz",
+                "Website": "berekebank.kz",
+                "License": "",
+                "Branches": ""
+            }
+        },
+        
+            {
+                "Bank": {
+                    "Name": "AO First Heartland Jusan Bank",
+                    "CEO": "NAN",
+                    "Board of Directors": [
+                        "Gulmira Janibekovna Jumadillayeva",
+                        "Zharkinbek Kydyrbaevich Azbekov (Independent Director)",
+                        "Kuat Bakirovich Kozakhmetov (Independent Director)",
+                        "Saida Sherizatovna Jarbolova (Independent Director)"
+                    ],
+                    "Chairman of the Board": "Gulmira Janibekovna Jumadillayeva",
+                    "Management Board Members": [
+                        "Alan Erikovich Dzhabaev",
+                        "Shiddat Jamalbekovich Shermatov",
+                        "Ermek Esbolovich Arginov",
+                        "Erbol Esembaevich Akhmetov",
+                        "Alexander Olegovich Paliy"
+                    ],
+                    "Other Executives": "NAN",
+                    "Director": "NAN",
+                    "Chief Accountant": "Nikara Miratovna Salikhova",
+                    "BIN": "920140000084",
+                    "Address": "A26F8T9, Almaty, N. Nazarbayev Avenue, 242",
+                    "Phone": "+7 (717) 258-77-11",
+                    "Email": "info@jusan.kz",
+                    "Website": "www.jusan.kz",
+                    "License": "",
+                    "Branches": ""
+                }
+            },
+            {
+                "Bank": {
+                    "Name": "AO \"ForteBank\"",
+                    "CEO": "NAN",
+                    "Board of Directors": [
+                        "Timur Rizabekovich Isataev",
+                        "Anuar Bulatovich Utemuratov",
+                        "Fedor Viktorovich Popandopulo (Independent Director)",
+                        "Erlan Tulegenovich Tuyakbaev (Independent Director)"
+                    ],
+                    "Chairman of the Board": "Talgat Zhumanovich Kuanishev",
+                    "Management Board Members": [
+                        "Aydyn Begzadayevich Auezkanov",
+                        "Ravshan Iskandarovich Irmatov",
+                        "Anna Viktorovna Pilipenko",
+                        "Anuar Toktarovich Bolgauov",
+                        "Sergey Ivanovich Kartashov",
+                        "Ernar Bolebaevich Tashenov",
+                        "Nariman Gainullayevich Zharkimbaev"
+                    ],
+                    "Other Executives": "NAN",
+                    "Director": "NAN",
+                    "Chief Accountant": "Zaure Bakhytovna Albosinova",
+                    "BIN": "990740000683",
+                    "Address": "Astana, Dostyk Street, 8/1",
+                    "Phone": "+7 (727) 258 75 75, +7 (7172) 58 75 75",
+                    "Email": "info@fortebank.com",
+                    "Website": "www.fortebank.com",
+                    "License": "",
+                    "Branches": ""
+                }
+            },
+            {
+                "Bank": {
+                    "Name": "AO \"Home Credit Bank\"",
+                    "CEO": "NAN",
+                    "Board of Directors": [
+                        "Bohumil Polachek (Independent Director)",
+                        "Anvar Galimullayevich Saydenov (Independent Director)",
+                        "Kirill Atanasov Bachvarov",
+                        "Narine Knyazovna Nadirova"
+                    ],
+                    "Chairman of the Board": "Kirill Atanasov Bachvarov",
+                    "Management Board Members": [
+                        "Zdenek Foukall",
+                        "Viktor Vladimirovich Batrak"
+                    ],
+                    "Other Executives": "NAN",
+                    "Director": "NAN",
+                    "Chief Accountant": "Gauhar Borisovna Masangaliyeva",
+                    "BIN": "930540000147",
+                    "Address": "050059, Almaty, N. Nazarbayev Ave, 248",
+                    "Phone": "+7 (727) 244 54 84",
+                    "Email": "info@homecredit.kz",
+                    "Website": "homecredit.kz; home.kz",
+                    "License": "",
+                    "Branches": ""
+                }
+            },
+        
+            {
+                "Bank": {
+                    "Name": "AO \"Kaspi Bank\"",
+                    "CEO": "NAN",
+                    "Board of Directors": [
+                        "Mikheil Nugarovich Lomtadze",
+                        "Chingis Zholdasbaevich Rakhmetov (Independent Director)"
+                    ],
+                    "Chairman of the Board": "Pavel Vladimirovich Mironov",
+                    "Management Board Members": [
+                        "Yuri Didenko",
+                        "Tengiz Mosidze",
+                        "Pavel Vladimirovich Mironov"
+                    ],
+                    "Other Executives": "NAN",
+                    "Director": "NAN",
+                    "Chief Accountant": "Naylya Amantaevna Ualibekova",
+                    "BIN": "971240001315",
+                    "Address": "050013, Almaty, Nauryzbai Batyr Street, 154",
+                    "Phone": "+7 (727) 258 59 55",
+                    "Email": "office@kaspibank.kz",
+                    "Website": "www.kaspibank.kz",
+                    "License": "",
+                    "Branches": ""
+                }
+            },
+            {
+                "Bank": {
+                    "Name": "AO \"Bank \"Bank RBK\"\"",
+                    "CEO": "NAN",
+                    "Board of Directors": [
+                        "Bolat Bidakhmetovich Zhamishev (Independent Director)",
+                        "Bolatbek Kazbekovich Zhainazarov",
+                        "Natalya Evgenievna Akentyeva",
+                        "Musabek Turgynbekovich Alimbekov (Independent Director)"
+                    ],
+                    "Chairman of the Board": "Natalya Evgenievna Akentyeva",
+                    "Management Board Members": [
+                        "Arman Ablaikanovich Tokarov",
+                        "Aliya Karimovna Esmukanova",
+                        "Erbol Muratovich Abdullayev",
+                        "Simbat Seytkasymovich Ibraimov"
+                    ],
+                    "Other Executives": "NAN",
+                    "Director": "NAN",
+                    "Chief Accountant": "Bigul Kabyzhanovna Tolepbergenova",
+                    "BIN": "920440001102",
+                    "Address": "A15X3C7, Almaty, Republic Square Street, House No. 15",
+                    "Phone": "+7 (727) 330 90 30",
+                    "Email": "info@bankrbk.kz",
+                    "Website": "www.bankrbk.kz",
+                    "License": "",
+                    "Branches": ""
+                }
+            },
+            {
+                "Bank": {
+                    "Name": "AO \"Bank CentrCredit\"",
+                    "CEO": "NAN",
+                    "Board of Directors": [
+                        "Vladislav Sedinovich Li",
+                        "Dzhumageldi Rakhishevich Amankulov",
+                        "Frans Josef Klaas Werner (Independent Director)",
+                        "Anvar Galimullayevich Saydenov (Independent Director)",
+                        "Daniyar Nurmukhametovich Shayahmetov"
+                    ],
+                    "Chairman of the Board": "Ruslan Vladimirovich Vladimirov",
+                    "Management Board Members": [
+                        "Rustam Bolatkanovich Tenizov",
+                        "Nurlan Umirbekovich Shegebaev",
+                        "Anastasia Sergeevna Ovsyannikova"
+                    ],
+                    "Other Executives": "NAN",
+                    "Director": "NAN",
+                    "Chief Accountant": "Aizhan Toleugazinovna Nurgalieva",
+                    "BIN": "980640000093",
+                    "Address": "A25D5G0, Almaty, Al-Farabi Avenue, 38",
+                    "Phone": "+7 (727) 259 85 98",
+                    "Email": "info@bcc.kz",
+                    "Website": "www.bcc.kz",
+                    "License": "",
+                    "Branches": ""
+                }
+            },
+            {
+                "Bank": {
+                    "Name": "AO \"Subsidiary Bank \"Kazakhstan-Ziraat International Bank\"\"",
+                    "CEO": "NAN",
+                    "Board of Directors": [
+                        "Erol Berktash (Independent Director)",
+                        "Acting Erhan Guler"
+                    ],
+                    "Chairman of the Board": "Murad Alkan",
+                    "Management Board Members": [
+                        "Aygul Merziyashevna Kanapiyeva",
+                        "Galiya Bagasharovna Masenova",
+                        "Zhalgas Kuandykuly Batalov",
+                        "Baurzhan Ermukhametovich Chigambaev"
+                    ],
+                    "Other Executives": "",
+                    "Director": "NAN",
+                    "Chief Accountant": "Anna Alexeyevna Chernova",
+                    "BIN": "930140000323",
+                    "Address": "A05F8G3 (050000), Almaty, Almaly District, Nauryzbai Batyr Street, 17A, 3rd Floor",
+                    "Phone": "+7 (727) 250 60 80",
+                    "Email": "kzibank@kzibank.kz, kzibank@kzibank.com",
+                    "Website": "www.kzibank.com",
+                    "License": "",
+                    "Branches": ""
+                }
+            },
+            {
+                "Bank": {
+                    "Name": "AO \"Eurasian Bank\"",
+                    "CEO": "NAN",
+                    "Board of Directors": [
+                        "Shukhrat Alidjanovich Ibragimov",
+                        "Arman Zhakypbekovich Nurushev (Independent Director)",
+                        "Vitaliy Nikolaevich Repey (Independent Director)"
+                    ],
+                    "Chairman of the Board": "Lyazzat Adylovna Satieva",
+                    "Management Board Members": [
+                        "Sabyrzhan Madievich Bekbosunov",
+                        "Erlanbek Zhandarbekuly Kappar",
+                        "Gaziz Maratovich Ermekov",
+                        "Ibrahim Alimbekovich Altamirov",
+                        "Askar Erjanovich Khamidullin",
+                        "Aynagul Amangeldinovna Daulletbaeva"
+                    ],
+                    "Other Executives": "NAN",
+                    "Director": "NAN",
+                    "Chief Accountant": "Saule Karimovna Rakhmetova",
+                    "BIN": "950240000112",
+                    "Address": "050002, Almaty, Kunaev Street, 56",
+                    "Phone": "+7 (727) 332 77 22, +7 (727) 259 79 00",
+                    "Email": "info@eubank.kz",
+                    "Website": "www.eubank.kz",
+                    "License": "",
+                    "Branches": ""
+                }
+            },
+            {
+                "Bank": {
+                    "Name": "AO \"Housing Construction Savings Bank \"Otbasy Bank\"\"",
+                    "CEO": "NAN",
+                    "Board of Directors": [
+                        "Lyazzat Erkenovna Ibragimova",
+                        "Sanzhar Erkebayevich Zhamalov (Independent Director)",
+                        "Ersain Erbulatovich Khamitov",
+                        "Elmyra Muslimovna Ermekova (Independent Director)",
+                        "Nurlan Tursunbekovich Tokobaev (Independent Director)"
+                    ],
+                    "Chairman of the Board": "Lyazzat Erkenovna Ibragimova",
+                    "Management Board Members": [
+                        "Aliya Karataevna Aidarbekova",
+                        "Nurlan Sagyndykovich Akshanov",
+                        "Elmyra Sabyrzhanovna Raspikova",
+                        "Mukhtar Mirlanovich Azimbekov",
+                        "Zansultan Orinbekovich Matay",
+                        "Rinat Aldashevich Taltusov"
+                    ],
+                    "Other Executives": "NAN",
+                    "Director": "NAN",
+                    "Chief Accountant": "Zhanerke Almasbekovna Kiltbaeva",
+                    "BIN": "030740001404",
+                    "Address": "050000, Almaty, Abilay Khan Avenue, 91",
+                    "Phone": "+7 (727) 279 35 11",
+                    "Email": "mail@hcsbk.kz",
+                    "Website": "www.hcsbk.kz",
+                    "License": "",
+                    "Branches": ""
+                }
+            },
+            {
+                "Bank": {
+                    "Name": "AO \"Islamic Bank \"ADCB\"\"",
+                    "CEO": "NAN",
+                    "Board of Directors": [
+                        "Farouk Abdulrahman Mohamed Hasan Al-Marzouki",
+                        "Ahmed Abdulaal Ali Abdulaal Al-Najjar",
+                        "Ishak Yusuf Abdullah Mirza Alkhan"
+                    ],
+                    "Chairman of the Board": "Gordon Haskins",
+                    "Management Board Members": [
+                        "Tayirov Aydyn Abaevich",
+                        "Mukhamedjanov Yeltay Nurbolatovich",
+                        "Askhatova Gulshat"
+                    ],
+                    "Other Executives": "NAN",
+                    "Director": "NAN",
+                    "Chief Accountant": "Tayirov Aydyn Abaevich",
+                    "BIN": "100140011772",
+                    "Address": "050040, Almaty, Al-Farabi Avenue, 77/7, NP.13a, 14th floor",
+                    "Phone": "+7 (727) 233 00 00",
+                    "Email": "NAN",
+                    "Website": "www.alhilalbank.kz",
+                    "License": "No. 1.3.69 from 2024-11-29",
+                    "Branches": ""
+                }
+            }
+            ,
+            {
+                "Name": "AO \"Islamic Bank \"Zaman-Bank\"\"",
+                "CEO": "NAN",
+                "Board of Directors": [
+                    "Ibraev Zhanat Kamitovich (Independent Director)",
+                    "Gupalo Elena Anatolyevna",
+                    "Asayeva Gulfairuz Erlanovna",
+                    "Muhammed Furkan Unal (Independent Director)",
+                    "Abguzhinov Alan Tasbulatovich"
+                ],
+                "Chairman of the Board": "Asayeva Gulfairuz Erlanovna",
+                "Management Board Members": [
+                    "Stalmakova Tatiana Aleksandrovna",
+                    "Smagulov Diar Nurlanovich"
+                ],
+                "Other Executives": "NAN",
+                "Director": "NAN",
+                "Chief Accountant": "Shatanova Gauhar Konyrbaevna",
+                "BIN": "910640000060",
+                "Address": "010000, Astana, Rakhimzhana Koshkarbaeva Street, 1a, BC \"Downtown, Tokyo block\"",
+                "Phone": "+7 (7172) 26 20 26",
+                "Email": "info@zamanbank.kz",
+                "Website": "www.zamanbank.kz",
+                "License": "",
+                "Branches": ""
+            },
+            {
+                "Name": "AO \"Halyk Bank Kazakhstan\"",
+                "CEO": "NAN",
+                "Board of Directors": [
+                    "Pavlov Alexander Sergeevich (Independent Director)",
+                    "Shayakhmetova Umut Bolatkhanovna",
+                    "Dunaev Arman Galiaskarovich (Independent Director)",
+                    "Frank Kailars (Independent Director)",
+                    "Petr Romanovski (Independent Director)",
+                    "German Tishendorf (Independent Director)",
+                    "Kulekeev Zhaksybek Abdrakhmetovich (Independent Director)",
+                    "Nurabaev Zhomart Dosankulovich"
+                ],
+                "Chairman of the Board": "Shayakhmetova Umut Bolatkhanovna",
+                "Management Board Members": [
+                    "Koshenov Murat Uzakbaevich",
+                    "Salimov Ertay Ismailovich",
+                    "Bodanov Ayvar Zhiryensheevich",
+                    "Sartayev Dauren Zhankiseevich",
+                    "Vuros Olga Vlamirovna",
+                    "Mashchik Roman Aleksandr",
+                    "Mukushev Nariman Nurlanovich"
+                ],
+                "Other Executives": "NAN",
+                "Director": "NAN",
+                "Chief Accountant": "Taljanova Dana Sakenovna",
+                "BIN": "940140000385",
+                "Address": "A26M3K5, Almaty, Al-Farabi Avenue, 40",
+                "Phone": "+7 (727) 259 07 77, +7 (727) 259 97 96 (technical support)",
+                "Email": "halykbank@halykbank.kz",
+                "Website": "www.halykbank.kz",
+                "License": "",
+                "Branches": ""
+            },
+            {
+                "Name": "AO \"Nurbank\"",
+                "CEO": "NAN",
+                "Board of Directors": [
+                    "Kamaleev Rustem Gumarovich (Independent Director)"
+                ],
+                "Chairman of the Board": "Musataeva Gulnara Abaevna",
+                "Management Board Members": [
+                    "Mazhuga Alexey Nikolaevich",
+                    "Tolymbekov Nurbek Qabylbekuly"
+                ],
+                "Other Executives": "NAN",
+                "Director": "NAN",
+                "Chief Accountant": "Ospanova Gulzhan Almakhanovna",
+                "BIN": "930940000164",
+                "Address": "050010, Almaty, Abay Avenue, 10V",
+                "Phone": "+7 (727) 259 97 10",
+                "Email": "cc_nur@nurbank.kz",
+                "Website": "www.nurbank.kz",
+                "License": "",
+                "Branches": ""
+            },
+            {
+                "Name": "AO \"Citibank Kazakhstan\"",
+                "CEO": "NAN",
+                "Board of Directors": [
+                    "Janet Heckman (Independent Director)",
+                    "Zhakaeva Saule Magauevna"
+                ],
+                "Chairman of the Board": "Zhakaeva Saule Magauevna",
+                "Management Board Members": [
+                    "Suigenbaeva Aizhan Amantaevna",
+                    "Ushakov Pavel Andreevich",
+                    "Moldabekov Arystan Dastanovich"
+                ],
+                "Other Executives": "NAN",
+                "Director": "NAN",
+                "Chief Accountant": "Omurzakova Madina Nurlanovna",
+                "BIN": "980540003232",
+                "Address": "050010, Almaty, Kazibek bi, 41A",
+                "Phone": "+7 (727) 298 04 00",
+                "Email": "citibank.kazakhstan@citi.com",
+                "Website": "www.citibank.com.",
+                "License": "",
+                "Branches": ""
+            },
+            {
+                "Name": "AO \"Industrial and Commercial Bank of China in Almaty\"",
+                "CEO": "NAN",
+                "Board of Directors": [
+                    "Gerasimenko Yuri Viktorovich (Independent Director)",
+                    "Ahanov Serik Akhmetzhanovich (Independent Director)",
+                    "Lyu Honghai"
+                ],
+                "Chairman of the Board": "Lyu Honghai",
+                "Management Board Members": [
+                    "Bai Min",
+                    "Yang Xiaoguan",
+                    "Muratkhanov Danat Muratkhonovich"
+                ],
+                "Other Executives": "NAN",
+                "Director": "NAN",
+                "Chief Accountant": "Magzumova Aliya Zhaksylikovna",
+                "BIN": "930340001235",
+                "Address": "Almaty, Abay Avenue 150/230, corner of Turgut Ozal Street 846, block 7",
+                "Phone": "+7 (727) 237 70 85",
+                "Email": "office@kz.icbc.com.cn",
+                "Website": "www.icbcalmaty.com",
+                "License": "",
+                "Branches": ""
+            },
+                {
+                    "Name": "AO \"Freedom Bank Kazakhstan\"",
+                    "CEO": "NAN",
+                    "Board of Directors": [
+                        "Lukyanov Sergey Nikolaevich",
+                        "Mantaeva Madina Boltaevna (Independent Director)",
+                        "Zhumagulov Aidos Bolatovich",
+                        "Zataev Zhaidarkan Torekhanovich (Independent Director)"
+                    ],
+                    "Chairman of the Board": "Akhmetova Gulfairuz Aitkabulovna",
+                    "Management Board Members": [
+                        "Tazhedenov Daniyar Olzhabekovich",
+                        "Drychkova Olga Sergeevna",
+                        "Agdavletov Timur Serikovich"
+                    ],
+                    "Other Executives": "NAN",
+                    "Director": "NAN",
+                    "Chief Accountant": "Kubeeva Dinara Kulmuratovna",
+                    "BIN": "090740019001",
+                    "Address": "A05E8Y2, Almaty, Kurmangazy Street, Building 61A",
+                    "Phone": "+7 (727) 259 55 95",
+                    "Email": "salem@bankffin.kz",
+                    "Website": "www.freedombank.kz",
+                    "License": "",
+                    "Branches": ""
+                },
+                {
+                    "Name": "AO \"Shinhan Bank Kazakhstan\"",
+                    "CEO": "NAN",
+                    "Board of Directors": [
+                        "Cho Young Un",
+                        "Lee Hong Gi (Independent Director)"
+                    ],
+                    "Chairman of the Board": "Cho Young Un",
+                    "Management Board Members": [
+                        "Kim Vitaliy Afanasevich",
+                        "John Byungkyu",
+                        "Kang Gitae",
+                        "Yun Younghi"
+                    ],
+                    "Other Executives": "NAN",
+                    "Director": "NAN",
+                    "Chief Accountant": "Zhaksybaeva Gulnara Shakenovna",
+                    "BIN": "080240019735",
+                    "Address": "050010, Almaty, Dostyk Avenue, 38",
+                    "Phone": "+7 (727) 356 96 00, +7 (727) 356 96 01",
+                    "Email": "infokz@shinhan.com",
+                    "Website": "www.shinhan.kz",
+                    "License": "",
+                    "Branches": ""
+                },
+                {
+                    "Name": "AO DB \"Bank of China in Kazakhstan\"",
+                    "CEO": "NAN",
+                    "Board of Directors": [
+                        "Fan Xiangnan (Independent Director)",
+                        "Du Qingzhi",
+                        "Usenova Ziliha Seydualieva (Independent Director)"
+                    ],
+                    "Chairman of the Board": "Du Qingzhi",
+                    "Management Board Members": [
+                        "Ibragimova Gulnaz Alexandrovna",
+                        "Suleimenova Zhanat Idrisovna",
+                        "Li Incai"
+                    ],
+                    "Other Executives": "NAN",
+                    "Director": "NAN",
+                    "Chief Accountant": "Suleimenova Zhanat Idrisovna",
+                    "BIN": "930440000156",
+                    "Address": "050063, Almaty, Zhetysu-2 microdistrict, Building 71B",
+                    "Phone": "+7 (727) 258 55 10, +7 (727) 258 55 33",
+                    "Email": "boc@bankofchina.kz, bockz@itte.kz",
+                    "Website": "www.boc.kz",
+                    "License": "",
+                    "Branches": ""
+                },
+                {
+                    "Name": "AO \"VTB Bank (Kazakhstan)\"",
+                    "CEO": "NAN",
+                    "Board of Directors": [
+                        "Stepanov Sergey Vladimirovich",
+                        "Shaimardanov Ilnar Ilshatovich",
+                        "Sabasazhiya Anzhelika Innocentyevna (Independent Director)"
+                    ],
+                    "Chairman of the Board": "Zabello Dmitriy Aleksandrovich",
+                    "Management Board Members": [
+                        "Nelina Anastasiya Sergeevna",
+                        "Tsykunov Dmitriy Sergeevich"
+                    ],
+                    "Other Executives": "NAN",
+                    "Director": "NAN",
+                    "Chief Accountant": "Lavrentieva Antonina Viktorovna",
+                    "BIN": "080940010300",
+                    "Address": "050040, Almaty, Timiryazev Street, 26/29",
+                    "Phone": "+7 (727) 330 50 50",
+                    "Email": "info@vtb-bank.kz",
+                    "Website": "www.vtb-bank.kz",
+                    "License": "",
+                    "Branches": ""
+                }
+            
+    ]

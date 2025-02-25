@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали банка</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       /* Root Variables */
+:root {
+    --primary-color: #008bf8;
+    --secondary-color: #56ccf2;
+    --secondary-gradient: linear-gradient(to bottom, #2f80ed, #56ccf2);
+    --light-color: #ececec;
+    --dark-color: #333333;
+    --white: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --hover-shadow-color: rgba(0, 0, 0, 0.25);
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-height: 1200px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left:100px;
+}
+.sideleft, .sideright{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container {
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+#chatbotCard {
+    border-radius: 20px;
+    max-height: 300px;
+    width: 300px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+#chatbotCard:hover{
+    border: solid 2px #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+
+#chatModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1060;
+}
+
+.chat-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    width: 90%;
+    max-width: 500px;
+    height: 70%;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid var(--light-color);
+    border-radius: 5px;
+}
+
+.chat-input {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input textarea {
+    flex-grow: 1;
+    resize: none;
+}
+
+/* News Carousel */
+.news-carousel {
+    width: 352px;
+    height: 630px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1em;
+    border: 2px solid var(--light-color);
+    box-shadow: 0 0.5rem 2rem var(--shadow-color);
+    transition: 0.5s ease-out;
+}
+
+.news-carousel:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 18px 0 var(--hover-shadow-color);
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* News Items */
+.news-item {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    border-radius: 1em;
+    background: linear-gradient(to right, var(--white), #ece9e6);
+    box-shadow: 0 0.1rem 1rem var(--shadow-color);
+}
+
+.news-item__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.news-item__body h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.news-item__footer {
+    display: flex;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.user {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.user__image {
+    border-radius: 50%;
+}
+
+.user__info > small {
+    color: var(--dark-color);
+}
+
+.tag {
+    align-self: flex-start;
+    padding: 0.25em 0.75em;
+    border-radius: 1em;
+    font-size: 0.75rem;
+}
+
+.tag-blue {
+    background: var(--secondary-gradient);
+    color: var(--white);
+}
+
+/* Contact Box */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Центрирование по вертикали */
+}
+
+.contact-box {
+    width: 500px;   /* Ширина 500px */
+    height: 500px;  /* Высота 700px */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    margin: 0;
+    padding: 0;
+}
+
+.box-body {
+    border: none;
+    padding: 20px;
+    overflow-y: auto; /* Прокрутка по вертикали, если контента слишком много */
+    border: 2px solid #c3c6ce;
+    border-radius: 20px;
+}
+.box-body:hover{
+    border: solid 2px var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 18px 0 var(--hover-shadow-color);
+    transition: 0.5s;
+
+}
+.text-dark {
+    color: #333;
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+
+/* Animation Styles */
+#chatModal.fade-in {
+    animation: fadeIn 0.3s forwards;
+}
+
+#chatModal.fade-out {
+    animation: fadeOut 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Directors Section */
+.card-mb4{
+    margin-left: 59px;
+}
+#directorsSection {
+    cursor: pointer;
+    border: 2px solid #007bff;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#directorsSection:hover {
+    background-color: #e7f1ff;
+    transform: translateY(-2px);
+}
+
+/* Style for Text and Arrow */
+#directorsSection p {
+    font-weight: 600;
+    color: #007bff;
+}
+
+#toggleIcon {
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+/* Hidden Director List */
+#directorsList {
+    margin-top: 15px;
+}
+
+#directorsList .list-group-item {
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+#directorsList .list-group-item:hover {
+    background-color: #e1f0ff;
+}
+
+#directorsList .list-group-item i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+#directorsList.collapse {
+    display: none;
+}
+
+/* Ucard Styles */
+.ucard {
+    width: 300px;
+    height: 260px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin-left: 50px;
+}
+
+.ucard-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+}
+
+.ucard-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.utext-body {
+    color: rgb(134, 134, 134);
+}
+
+.utext-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.ucard:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.ucard:hover .ucard-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+.card-body:hover{
+    border: solid 2px var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 18px 0 var(--hover-shadow-color);
+    transition: 0.5s;
+}
+
+
+    </style>
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Банки</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О нас</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="main">
+            <div class="sideleft">
+                <div class="news-carousel">
+                <div class="carousel">
+                    <div class="news-item">
+                        <div class="news-item__body">
+                            <span class="tag tag-blue">Technology</span>
+                            <h4>What's new in 2022 Tech</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus.</p>
+                        </div>
+                        <div class="news-item__footer">
+                            <div class="user">
+                                <h5>Jane Doe</h5>
+                                <small>2h ago</small>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="news-item">
+                        <div class="news-item__body">
+                            <span class="tag tag-blue">Health</span>
+                            <h4>5 Tips for Better Health</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, architecto suscipit? Nobis, vel!</p>
+                        </div>
+                        <div class="news-item__footer">
+                            <div class="user">
+                                <h5>John Smith</h5>
+                                <small>5h ago</small>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="news-item">
+                        <div class="news-item__body">
+                            <span class="tag tag-blue">Science</span>
+                            <h4>Discoveries in Quantum Physics</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, numquam repellat.</p>
+                        </div>
+                        <div class="news-item__footer">
+                            <div class="user">
+                                <h5>Emily Brown</h5>
+                                <small>1d ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+            <div class="sideright">
+                <div class="ucard">
+                <div class="ucard-details">
+                    <p class="utext-title">{{ bank["Name"] }}</p>
+                </div>
+                <button class="ucard-button">
+                    <a href="{{ bank.get('Website', 'N/A') }}" target="_blank" style="text-decoration: none; color: white;">More Info</a>
+                </button>
+                </div>
+        
+                <div class="col-md-6" style="margin-left: 50px; max-height: 120px; border-radius: 20px;">
+                    <div class="card mb-4" style="border-radius: 20px;">
+                        <div class="card-body" style="transition: 0.5s; border-radius: 20px;" >
+                            <p><strong>CEO:</strong> {{ bank.get("CEO", "N/A") }}</p>
+                            <!-- Скрытый список директоров -->
+                            <div id="directorsSection" class="mt-3" style="cursor: pointer; border: 1px solid #ccc; padding: 10px; border-radius: 5px;" 
+                                onclick="toggleDirectors()">
+                                <p class="mb-0"><strong>Члены совета директоров:</strong></p>
+                            </div>
+                            
+                            <div id="directorsList" class="mt-3 collapse">
+                                <ul>
+                                    {% for director in bank.get("Board of Directors", []) %}
+                                    <li>{{ director }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="chatbotCard" class="card">
+                    <div class="card-header text-white text-center" style="background-color: #007bff; border-top-left-radius: 20px; border-top-right-radius: 20px;">
+                        Чат-бот
+                    </div>
+                    <div class="card-body text-center" style="border-radius: 20px;">
+                        <p>Кликните, чтобы открыть чат</p>
+                    </div>
+                </div>
+     
+                <div id="chatModal">
+                    <div class="chat-content">
+                        <div class="chat-header  text-white p-2" style="background-color: #007bff;">
+                            Чат-бот
+                            <button class="btn-close float-end" onclick="closeChat()" aria-label="Close"></button>
+                        </div>
+                        <div class="chat-messages" id="chatMessages">
+                            <!-- Сообщения чата -->
+                        </div>
+                        <div class="chat-input">
+                            <textarea id="chatInput" rows="2" placeholder="Введите сообщение..."></textarea>
+                            <button class="btn btn-primary" onclick="sendMessage()">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            
+
+                        <div class="col-md-6" style="margin-left: 50px; margin-bottom: 100px;">
+                            <div class="contact-box shadow-lg rounded-4">
+                                <div class="box-body px-4 py-5" style="border-radius: 20px;">
+                                    <p class="text-muted mb-3">
+                                        <span class="fw-semibold text-dark">Адрес:</span> 
+                                        {{ bank.get("Address", "N/A") }}
+                                    </p>
+                                    <p class="text-muted mb-3">
+                                        <span class="fw-semibold text-dark">Телефон:</span> 
+                                        {{ bank.get("Phone", "N/A") }}
+                                    </p>
+                                    <p class="text-muted mb-4">
+                                        <span class="fw-semibold text-dark">Email:</span> 
+                                        {{ bank.get("Email", "N/A") }}
+                                    </p>
+                                    <div id="map" class="rounded-3 shadow-sm" style="height: 300px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Google Maps API для отображения карты
+        function initMap() {
+            const location = { lat: 43.238949, lng: 76.889709 }; // Координаты Алма-Аты (пример)
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: location,
+            });
+            new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+        window.onload = initMap;
+
+
+
+        function sendMessage() {
+            const question = document.getElementById('chatInput').value;
+            if (!question.trim()) {
+                document.getElementById('chatResponse').textContent = 'Введите ваш вопрос!';
+                return;
+            }
+            document.getElementById('chatResponse').innerHTML = `
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            `;
+            setTimeout(() => {
+                document.getElementById('chatResponse').textContent = `Ваш вопрос: "${question}". Ответ: пока не реализовано!`;
+            }, 1000);
+        }
+
+        function toggleDirectors() {
+        const directorsList = document.getElementById('directorsList');
+        if (directorsList.classList.contains('collapse')) {
+            directorsList.classList.remove('collapse');
+        } else {
+            directorsList.classList.add('collapse');
+        }
+    }
+    const chatbotCard = document.getElementById("chatbotCard");
+        const chatModal = document.getElementById("chatModal");
+        const chatMessages = document.getElementById("chatMessages");
+        const chatInput = document.getElementById("chatInput");
+
+        chatbotCard.addEventListener("click", () => {
+            chatModal.style.display = "block";
+            chatModal.classList.remove("fade-out");
+            chatModal.classList.add("fade-in");
+        });
+
+        function closeChat() {
+            chatModal.classList.remove("fade-in");
+            chatModal.classList.add("fade-out");
+            setTimeout(() => {
+                chatModal.style.display = "none";
+            }, 300);
+        }
+
+
+        function sendMessage() {
+            const userMessage = chatInput.value.trim();
+            if (userMessage === "") return;
+
+
+            const userMessageElement = document.createElement("div");
+            userMessageElement.textContent = userMessage;
+            userMessageElement.style.textAlign = "right";
+            userMessageElement.style.marginBottom = "10px";
+            chatMessages.appendChild(userMessageElement);
+
+            chatInput.value = "";
+
+
+            const botResponseElement = document.createElement("div");
+            botResponseElement.textContent = "Спасибо за ваш вопрос! Мы скоро ответим.";
+            botResponseElement.style.textAlign = "left";
+            botResponseElement.style.marginBottom = "10px";
+            chatMessages.appendChild(botResponseElement);
+
+            chatMessages.scrollTop = chatMessages.scrollHeight; 
+        }
+        const carousel = document.querySelector('.carousel');
+const newsItems = Array.from(document.querySelectorAll('.news-item'));
+const newsItemHeight = newsItems[0].offsetHeight + 20; 
+
+carousel.append(...newsItems.map(newsItem => newsItem.cloneNode(true)));
+carousel.prepend(...newsItems.map(newsItem => newsItem.cloneNode(true)));
+
+let currentIndex = newsItems.length; 
+carousel.style.transform = `translateY(-${currentIndex * newsItemHeight}px)`;
+
+
+function scrollCarousel(direction) {
+  if (direction === 'up') {
+    currentIndex--;
+  } else {
+    currentIndex++;
+  }
+
+  carousel.style.transition = 'transform 0.5s ease-in-out';
+  carousel.style.transform = `translateY(-${currentIndex * newsItemHeight}px)`;
+
+
+  setTimeout(() => {
+    if (currentIndex <= 0) {
+      currentIndex = newsItems.length;
+      carousel.style.transition = 'none';
+      carousel.style.transform = `translateY(-${currentIndex * newsItemHeight}px)`;
+    } else if (currentIndex >= newsItems.length * 2) {
+      currentIndex = newsItems.length - 1;
+      carousel.style.transition = 'none';
+      carousel.style.transform = `translateY(-${currentIndex * newsItemHeight}px)`;
+    }
+  }, 500);
+}
+
+setInterval(() => scrollCarousel('down'), 3000);
+    </script>
+</body>
+</html>

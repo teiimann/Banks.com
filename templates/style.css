@@ -1,0 +1,208 @@
+.ucard {
+    width: 190px;
+    height: 254px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+}
+
+.ucard-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+}
+
+.ucard-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.utext-body {
+    color: rgb(134, 134, 134);
+}
+
+.utext-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.ucard:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.ucard:hover .ucard-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+#chatbotCard {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    cursor: pointer;
+    z-index: 1050;
+}
+
+/* Модальное окно */
+#chatModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1060;
+}
+
+.chat-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    height: 70%;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.chat-input {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input textarea {
+    flex-grow: 1;
+    resize: none;
+}
+
+/* Анимация */
+#chatModal.fade-in {
+    animation: fadeIn 0.3s forwards;
+}
+
+#chatModal.fade-out {
+    animation: fadeOut 0.3s forwards;
+}
+
+.contact-card {
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Заголовок карточки */
+.contact-card .card-header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #007aff;
+    text-align: center;
+    background: linear-gradient(to right, #e8f4ff, #d8e8ff);
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Тело карточки */
+.contact-card .card-body {
+    padding: 20px 30px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+}
+
+.contact-card .card-body p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.contact-card .card-body p strong {
+    color: #007aff;
+}
+
+/* Карта */
+#map {
+    height: 300px;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Тени при наведении */
+.contact-card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .contact-card {
+        border-radius: 15px;
+    }
+
+    .contact-card .card-header {
+        font-size: 1.25rem;
+    }
+
+    .contact-card .card-body {
+        padding: 15px 20px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

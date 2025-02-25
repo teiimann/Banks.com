@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .info {
+            margin-bottom: 20px;
+        }
+        .info p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .map {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        // Инициализация карты с использованием Google Maps API
+        function initMap() {
+            const address = "{{ bank.get('Address', 'N/A') }}";
+            const location = { lat: 43.238949, lng: 76.889709 }; // Пример координат
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: location,
+            });
+            new google.maps.Marker({
+                position: location,
+                map: map,
+                title: address,
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Контакты</div>
+        <div class="info">
+            <p><strong>Адрес:</strong> {{ bank.get('Address', 'N/A') }}</p>
+            <p><strong>Телефон:</strong> {{ bank.get('Phone', 'N/A') }}</p>
+            <p><strong>Email:</strong> {{ bank.get('Email', 'N/A') }}</p>
+        </div>
+        <div id="map" class="map"></div>
+    </div>
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>
